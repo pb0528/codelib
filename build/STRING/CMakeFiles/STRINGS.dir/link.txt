@@ -1,0 +1,3 @@
+D:\workSpace\cmake-3.19.2-win64-x64\bin\cmake.exe -E rm -f CMakeFiles\STRINGS.dir/objects.a
+D:\MinGW\mingw32\bin\ar.exe cr CMakeFiles\STRINGS.dir/objects.a @CMakeFiles\STRINGS.dir\objects1.rsp
+D:\MinGW\mingw32\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\STRINGS.dir/objects.a -Wl,--no-whole-archive -o STRINGS.exe -Wl,--out-implib,libSTRINGS.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\STRINGS.dir\linklibs.rsp

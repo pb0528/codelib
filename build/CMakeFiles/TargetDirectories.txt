@@ -1,0 +1,10 @@
+E:/C++/workspace/codelib/build/CMakeFiles/package_source.dir
+E:/C++/workspace/codelib/build/CMakeFiles/HelloWorld.dir
+E:/C++/workspace/codelib/build/CMakeFiles/package.dir
+E:/C++/workspace/codelib/build/CMakeFiles/edit_cache.dir
+E:/C++/workspace/codelib/build/CMakeFiles/rebuild_cache.dir
+E:/C++/workspace/codelib/build/STRING/CMakeFiles/package_source.dir
+E:/C++/workspace/codelib/build/STRING/CMakeFiles/STRINGS.dir
+E:/C++/workspace/codelib/build/STRING/CMakeFiles/package.dir
+E:/C++/workspace/codelib/build/STRING/CMakeFiles/edit_cache.dir
+E:/C++/workspace/codelib/build/STRING/CMakeFiles/rebuild_cache.dir
