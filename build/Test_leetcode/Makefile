@@ -74,27 +74,27 @@ CMAKE_BINARY_DIR = E:\C++\workspace\codelib\build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target package_source
-package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	D:\workSpace\cmake-3.19.2-win64-x64\bin\cpack.exe --config ./CPackSourceConfig.cmake E:/C++/workspace/codelib/build/CPackSourceConfig.cmake
-.PHONY : package_source
-
-# Special rule for the target package_source
-package_source/fast: package_source
-
-.PHONY : package_source/fast
-
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	D:\workSpace\cmake-3.19.2-win64-x64\bin\cpack.exe --config ./CPackConfig.cmake
+	cd /d E:\C++\workspace\codelib\build && D:\workSpace\cmake-3.19.2-win64-x64\bin\cpack.exe --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
 package/fast: package
 
 .PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	cd /d E:\C++\workspace\codelib\build && D:\workSpace\cmake-3.19.2-win64-x64\bin\cpack.exe --config ./CPackSourceConfig.cmake E:/C++/workspace/codelib/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+
+.PHONY : package_source/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -120,14 +120,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\C++\workspace\codelib\build\CMakeFiles E:\C++\workspace\codelib\build\\CMakeFiles\progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
+	cd /d E:\C++\workspace\codelib\build && $(CMAKE_COMMAND) -E cmake_progress_start E:\C++\workspace\codelib\build\CMakeFiles E:\C++\workspace\codelib\build\Test_leetcode\\CMakeFiles\progress.marks
+	cd /d E:\C++\workspace\codelib\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test_leetcode/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\C++\workspace\codelib\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 clean
+	cd /d E:\C++\workspace\codelib\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test_leetcode/clean
 .PHONY : clean
 
 # The main clean target
@@ -137,56 +137,32 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d E:\C++\workspace\codelib\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test_leetcode/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d E:\C++\workspace\codelib\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test_leetcode/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d E:\C++\workspace\codelib\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named HelloWorld
+# Convenience name for target.
+Test_leetcode/CMakeFiles/TestLeetcode.dir/rule:
+	cd /d E:\C++\workspace\codelib\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test_leetcode/CMakeFiles/TestLeetcode.dir/rule
+.PHONY : Test_leetcode/CMakeFiles/TestLeetcode.dir/rule
 
-# Build rule for target.
-HelloWorld: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 HelloWorld
-.PHONY : HelloWorld
+# Convenience name for target.
+TestLeetcode: Test_leetcode/CMakeFiles/TestLeetcode.dir/rule
 
-# fast build rule for target.
-HelloWorld/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HelloWorld.dir\build.make CMakeFiles/HelloWorld.dir/build
-.PHONY : HelloWorld/fast
-
-#=============================================================================
-# Target rules for targets named STRINGS
-
-# Build rule for target.
-STRINGS: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STRINGS
-.PHONY : STRINGS
-
-# fast build rule for target.
-STRINGS/fast:
-	$(MAKE) $(MAKESILENT) -f STRING\CMakeFiles\STRINGS.dir\build.make STRING/CMakeFiles/STRINGS.dir/build
-.PHONY : STRINGS/fast
-
-#=============================================================================
-# Target rules for targets named TestLeetcode
-
-# Build rule for target.
-TestLeetcode: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TestLeetcode
 .PHONY : TestLeetcode
 
 # fast build rule for target.
 TestLeetcode/fast:
-	$(MAKE) $(MAKESILENT) -f Test_leetcode\CMakeFiles\TestLeetcode.dir\build.make Test_leetcode/CMakeFiles/TestLeetcode.dir/build
+	cd /d E:\C++\workspace\codelib\build && $(MAKE) $(MAKESILENT) -f Test_leetcode\CMakeFiles\TestLeetcode.dir\build.make Test_leetcode/CMakeFiles/TestLeetcode.dir/build
 .PHONY : TestLeetcode/fast
 
 main.obj: main.cpp.obj
@@ -195,7 +171,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HelloWorld.dir\build.make CMakeFiles/HelloWorld.dir/main.cpp.obj
+	cd /d E:\C++\workspace\codelib\build && $(MAKE) $(MAKESILENT) -f Test_leetcode\CMakeFiles\TestLeetcode.dir\build.make Test_leetcode/CMakeFiles/TestLeetcode.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -204,7 +180,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HelloWorld.dir\build.make CMakeFiles/HelloWorld.dir/main.cpp.i
+	cd /d E:\C++\workspace\codelib\build && $(MAKE) $(MAKESILENT) -f Test_leetcode\CMakeFiles\TestLeetcode.dir\build.make Test_leetcode/CMakeFiles/TestLeetcode.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -213,7 +189,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HelloWorld.dir\build.make CMakeFiles/HelloWorld.dir/main.cpp.s
+	cd /d E:\C++\workspace\codelib\build && $(MAKE) $(MAKESILENT) -f Test_leetcode\CMakeFiles\TestLeetcode.dir\build.make Test_leetcode/CMakeFiles/TestLeetcode.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -226,8 +202,6 @@ help:
 	@echo ... package
 	@echo ... package_source
 	@echo ... rebuild_cache
-	@echo ... HelloWorld
-	@echo ... STRINGS
 	@echo ... TestLeetcode
 	@echo ... main.obj
 	@echo ... main.i
@@ -243,6 +217,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d E:\C++\workspace\codelib\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

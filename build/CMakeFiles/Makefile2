@@ -73,17 +73,20 @@ CMAKE_BINARY_DIR = E:\C++\workspace\codelib\build
 # The main recursive "all" target.
 all: CMakeFiles/HelloWorld.dir/all
 all: STRING/all
+all: Test_leetcode/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: STRING/preinstall
+preinstall: Test_leetcode/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/HelloWorld.dir/clean
 clean: STRING/clean
+clean: Test_leetcode/clean
 
 .PHONY : clean
 
@@ -104,6 +107,24 @@ STRING/preinstall:
 STRING/clean: STRING/CMakeFiles/STRINGS.dir/clean
 
 .PHONY : STRING/clean
+
+#=============================================================================
+# Directory level rules for directory Test_leetcode
+
+# Recursive "all" directory target.
+Test_leetcode/all: Test_leetcode/CMakeFiles/TestLeetcode.dir/all
+
+.PHONY : Test_leetcode/all
+
+# Recursive "preinstall" directory target.
+Test_leetcode/preinstall:
+
+.PHONY : Test_leetcode/preinstall
+
+# Recursive "clean" directory target.
+Test_leetcode/clean: Test_leetcode/CMakeFiles/TestLeetcode.dir/clean
+
+.PHONY : Test_leetcode/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/HelloWorld.dir
@@ -158,6 +179,33 @@ STRINGS: STRING/CMakeFiles/STRINGS.dir/rule
 STRING/CMakeFiles/STRINGS.dir/clean:
 	$(MAKE) $(MAKESILENT) -f STRING\CMakeFiles\STRINGS.dir\build.make STRING/CMakeFiles/STRINGS.dir/clean
 .PHONY : STRING/CMakeFiles/STRINGS.dir/clean
+
+#=============================================================================
+# Target rules for target Test_leetcode/CMakeFiles/TestLeetcode.dir
+
+# All Build rule for target.
+Test_leetcode/CMakeFiles/TestLeetcode.dir/all:
+	$(MAKE) $(MAKESILENT) -f Test_leetcode\CMakeFiles\TestLeetcode.dir\build.make Test_leetcode/CMakeFiles/TestLeetcode.dir/depend
+	$(MAKE) $(MAKESILENT) -f Test_leetcode\CMakeFiles\TestLeetcode.dir\build.make Test_leetcode/CMakeFiles/TestLeetcode.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\C++\workspace\codelib\build\CMakeFiles --progress-num=5,6 "Built target TestLeetcode"
+.PHONY : Test_leetcode/CMakeFiles/TestLeetcode.dir/all
+
+# Build rule for subdir invocation for target.
+Test_leetcode/CMakeFiles/TestLeetcode.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\C++\workspace\codelib\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test_leetcode/CMakeFiles/TestLeetcode.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\C++\workspace\codelib\build\CMakeFiles 0
+.PHONY : Test_leetcode/CMakeFiles/TestLeetcode.dir/rule
+
+# Convenience name for target.
+TestLeetcode: Test_leetcode/CMakeFiles/TestLeetcode.dir/rule
+
+.PHONY : TestLeetcode
+
+# clean rule for target.
+Test_leetcode/CMakeFiles/TestLeetcode.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Test_leetcode\CMakeFiles\TestLeetcode.dir\build.make Test_leetcode/CMakeFiles/TestLeetcode.dir/clean
+.PHONY : Test_leetcode/CMakeFiles/TestLeetcode.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

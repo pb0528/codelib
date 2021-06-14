@@ -33,6 +33,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "D:/workSpace/cmake-3.19.2-win64-x64/share/cmake-3.19/Templates/CPackConfig.cmake.in"
   "../CMakeLists.txt"
   "../STRING/CMakeLists.txt"
+  "../Test_leetcode/CMakeLists.txt"
   "CMakeFiles/3.19.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.19.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.19.2/CMakeRCCompiler.cmake"
@@ -47,16 +48,18 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CPackConfig.cmake"
-  "CPackSourceConfig.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "CPackConfig.cmake"
   "CPackSourceConfig.cmake"
   "STRING/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "CPackConfig.cmake"
+  "CPackSourceConfig.cmake"
+  "Test_leetcode/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/HelloWorld.dir/DependInfo.cmake"
   "STRING/CMakeFiles/STRINGS.dir/DependInfo.cmake"
+  "Test_leetcode/CMakeFiles/TestLeetcode.dir/DependInfo.cmake"
   )
