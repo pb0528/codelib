@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/C++/workspace/codelib/CONTAINER/test.cpp
+unordered_map
+-
+string
+-
+iterator
+-
+iostream
+-
+

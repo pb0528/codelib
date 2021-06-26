@@ -9,7 +9,8 @@
 					"childIndexes" : 
 					[
 						1,
-						2
+						2,
+						3
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -47,6 +48,20 @@
 					"source" : "Test_leetcode",
 					"targetIndexes" : 
 					[
+						3
+					]
+				},
+				{
+					"build" : "CONTAINER",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "CONTAINER",
+					"targetIndexes" : 
+					[
 						2
 					]
 				}
@@ -58,7 +73,8 @@
 					"childIndexes" : 
 					[
 						1,
-						2
+						2,
+						3
 					],
 					"directoryIndexes" : 
 					[
@@ -91,6 +107,18 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "TEST_CONTAINER",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
 						2
 					]
 				}
@@ -110,6 +138,13 @@
 					"jsonFile" : "target-STRINGS-Debug-7764d973538da70e3250.json",
 					"name" : "STRINGS",
 					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "TEST_CONTAINER::@1b4d6e5ce0cad9db57e4",
+					"jsonFile" : "target-TEST_CONTAINER-Debug-11aa5815e186b106afa4.json",
+					"name" : "TEST_CONTAINER",
+					"projectIndex" : 3
 				},
 				{
 					"directoryIndex" : 2,

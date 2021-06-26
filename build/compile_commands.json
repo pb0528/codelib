@@ -13,5 +13,10 @@
   "directory": "E:/C++/workspace/codelib/build/Test_leetcode",
   "command": "D:\\MinGW\\mingw32\\bin\\g++.exe   -g -std=gnu++11 -o CMakeFiles\\TestLeetcode.dir\\main.cpp.obj -c E:\\C++\\workspace\\codelib\\Test_leetcode\\main.cpp",
   "file": "E:/C++/workspace/codelib/Test_leetcode/main.cpp"
+},
+{
+  "directory": "E:/C++/workspace/codelib/build/CONTAINER",
+  "command": "D:\\MinGW\\mingw32\\bin\\g++.exe   -g -std=gnu++11 -o CMakeFiles\\TEST_CONTAINER.dir\\test.cpp.obj -c E:\\C++\\workspace\\codelib\\CONTAINER\\test.cpp",
+  "file": "E:/C++/workspace/codelib/CONTAINER/test.cpp"
 }
 ]

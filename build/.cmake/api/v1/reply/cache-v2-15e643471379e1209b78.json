@@ -799,7 +799,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "3"
+			"value" : "4"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1492,6 +1492,30 @@
 			],
 			"type" : "STATIC",
 			"value" : "E:/C++/workspace/codelib/STRING"
+		},
+		{
+			"name" : "TEST_CONTAINER_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "E:/C++/workspace/codelib/build/CONTAINER"
+		},
+		{
+			"name" : "TEST_CONTAINER_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "E:/C++/workspace/codelib/CONTAINER"
 		},
 		{
 			"name" : "TestLeetcode_BINARY_DIR",

@@ -189,6 +189,19 @@ TestLeetcode/fast:
 	$(MAKE) $(MAKESILENT) -f Test_leetcode\CMakeFiles\TestLeetcode.dir\build.make Test_leetcode/CMakeFiles/TestLeetcode.dir/build
 .PHONY : TestLeetcode/fast
 
+#=============================================================================
+# Target rules for targets named TEST_CONTAINER
+
+# Build rule for target.
+TEST_CONTAINER: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TEST_CONTAINER
+.PHONY : TEST_CONTAINER
+
+# fast build rule for target.
+TEST_CONTAINER/fast:
+	$(MAKE) $(MAKESILENT) -f CONTAINER\CMakeFiles\TEST_CONTAINER.dir\build.make CONTAINER/CMakeFiles/TEST_CONTAINER.dir/build
+.PHONY : TEST_CONTAINER/fast
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -228,6 +241,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... HelloWorld
 	@echo ... STRINGS
+	@echo ... TEST_CONTAINER
 	@echo ... TestLeetcode
 	@echo ... main.obj
 	@echo ... main.i

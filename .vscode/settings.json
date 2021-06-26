@@ -53,5 +53,6 @@
         "functional": "cpp",
         "sstream": "cpp",
         "algorithm": "cpp"
-    }
+    },
+    "python.pythonPath": "F:\\python\\python.exe"
 }
