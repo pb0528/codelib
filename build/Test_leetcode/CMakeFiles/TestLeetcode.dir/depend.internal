@@ -3,4 +3,5 @@
 
 Test_leetcode/CMakeFiles/TestLeetcode.dir/main.cpp.obj
  E:/C++/workspace/codelib/Test_leetcode/main.cpp
- E:/C++/workspace/codelib/Test_leetcode/src/test.h
+ E:/C++/workspace/codelib/Test_leetcode/src/Array/FindNMaxNum.h
+ E:/C++/workspace/codelib/Test_leetcode/src/Sort/quicksort.h

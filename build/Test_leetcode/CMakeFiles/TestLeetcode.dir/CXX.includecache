@@ -7,20 +7,24 @@
 #IncludeRegexTransform: 
 
 E:/C++/workspace/codelib/Test_leetcode/main.cpp
-iostream
+./src/Array/FindNMaxNum.h
+E:/C++/workspace/codelib/Test_leetcode/src/Array/FindNMaxNum.h
+E:/C++/workspace/codelib/Test_leetcode/src/Sort/quicksort.h
 -
-vector
+memory
 -
-./src/test.h
-E:/C++/workspace/codelib/Test_leetcode/src/test.h
 
-E:/C++/workspace/codelib/Test_leetcode/src/test.h
+E:/C++/workspace/codelib/Test_leetcode/src/Array/FindNMaxNum.h
 vector
 -
-queue
+stack
 -
 iostream
 -
-iterator
+
+E:/C++/workspace/codelib/Test_leetcode/src/Sort/quicksort.h
+vector
+-
+iostream
 -
 

@@ -77,3 +77,38 @@ public:
         return pre->next;
     }
 };
+
+ListNode* Reverse_List(ListNode* head)
+{
+    ListNode* pre = nullptr;
+    ListNode* pivot = head;
+    ListNode* next = nullptr;
+
+    while(pivot != nullptr)
+    {
+        next = pivot->next;
+        pivot->next = pre;
+        pre = pivot;
+        pivot = next;
+    }
+
+    return pre;
+}
+
+ListNode* Reverse(ListNode* pivot, ListNode* pre);
+ListNode* Reverse_List_recursion(ListNode* head)
+{
+    if(head == nullptr) return nullptr;
+    ListNode* pre = nullptr;
+    Reverse(head, pre);
+}
+
+ListNode* Reverse(ListNode* pivot, ListNode* pre)
+{
+    if(pivot == nullptr) return pre;
+    ListNode* next = pivot->next;
+    pivot->next = pre;
+    pre = pivot;
+    Reverse(next, pre);
+}
+
