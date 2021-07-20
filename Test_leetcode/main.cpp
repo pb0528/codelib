@@ -1,6 +1,6 @@
-#include<iostream>
-#include<vector>
-#include"./src/test.h"
+#include"./src/Array/FindNMaxNum.h"
+#include"E:\C++\workspace\codelib\Test_leetcode\src\Sort\quicksort.h"
+#include<memory>
 
 
 using namespace std;
@@ -9,12 +9,6 @@ using namespace std;
 
 int main()
 {
-    using namespace sol;
-    soulution sole;
-    vector<int> rec = {1,2,3,4,5,6,10};
-    vector<int> rec2 = {3,4,10,2};
-    vector<int> rec3 = {3,10,20,40,100};
-    cout<< sole.findSmallestComm(rec,rec2,rec3) <<endl;
-
+    Sort::test();
     return 0;
 }
